@@ -9,6 +9,7 @@ const OpenScreen = () => {
         navigation.navigate("inst1")
     }
 
+    setTimeout
 
   return (
     <View>
@@ -33,12 +34,12 @@ export default OpenScreen
 const styles = StyleSheet.create({
 
   container:{
-    backgroundColor:"#2E2E2E",
+    backgroundColor:"#3872D0",
     flex:1,
 },
 topImageContainer:{
   height:900,
-  backgroundColor:"#2E2E2E"
+  backgroundColor:"#3872D0"
 },
 topImage:{
   width:"40%",

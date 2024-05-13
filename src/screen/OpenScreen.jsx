@@ -9,6 +9,7 @@ const OpenScreen = () => {
         navigation.navigate("inst1")
     }
 
+  
 
   return (
     <View>
@@ -21,10 +22,7 @@ const OpenScreen = () => {
         style={styles.topImage}
         />
       <TouchableOpacity>
-      <Image 
-        source={require("../assets/bottom.png")}
-        style={styles.bottomImage}
-        />
+      
       </TouchableOpacity>
       </View>
       </View>
@@ -42,7 +40,8 @@ const styles = StyleSheet.create({
     flex:1,
 },
 topImageContainer:{
-  height:800,
+  height:900,
+  backgroundColor:"white"
 },
 topImage:{
   width:"40%",

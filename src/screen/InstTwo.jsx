@@ -17,7 +17,7 @@ const InstOne = () => {
     <LinearGradient colors={['#FFB162', '#FE9F3F', '#FD962D']} style={styles.container}>
     <TouchableOpacity onPress= {handleRegister}>
         <View style={styles.textconatiner}>
-            <Text style={styles.textt}>choose start and destination location</Text>
+            <Text style={styles.textt}>Select a Route!</Text>
         </View>
     </TouchableOpacity>
         <View style={styles.Imageconatiner}> 

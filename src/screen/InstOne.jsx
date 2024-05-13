@@ -17,7 +17,7 @@ const InstOne = () => {
     <LinearGradient colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.container}>
     <TouchableOpacity onPress= {handleRegister}>
         <View style={styles.textconatiner}>
-            <Text style={styles.textt}>Pick start and destination location</Text>
+            <Text style={styles.textt}>Enter Origin and Destination Location</Text>
         </View>
     </TouchableOpacity>
         <View style={styles.Imageconatiner}> 
@@ -44,8 +44,9 @@ const styles = StyleSheet.create({
         fontSize: 25,
         color:"white",
         alignSelf:"center",
-        fontWeight:"300",
+        fontWeight:"400",
         textAlign:"right",
+        fontFamily:"inter",
     },
     textconatiner:{
         top:"140%",
