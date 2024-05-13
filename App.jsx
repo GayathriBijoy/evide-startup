@@ -18,11 +18,11 @@ const App = () => {
     <NavigationContainer>{
       <Stack.Navigator 
         screenOptions={{headerShown: false,}}>
+        <Stack.Screen name="open0" component={Open0} />
+        <Stack.Screen name="open" component={OpenScreen} />
         <Stack.Screen name="inst1" component={InstOne} />
         <Stack.Screen name="inst2" component={InstTwo} />
         <Stack.Screen name="inst3" component={InstThree} />
-        <Stack.Screen name="open0" component={Open0} />
-        <Stack.Screen name="open" component={OpenScreen} />
 
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Signup" component={SignupScreen} />

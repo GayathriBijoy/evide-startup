@@ -26,6 +26,12 @@ const InstOne = () => {
                 style={styles.topImage}
             />
         </View>
+        <View style={styles.ImageContainer2}>
+            <Image source={require("../assets/pic2.png")}
+            style={styles.topImage2}>
+
+            </Image>
+        </View>
         
         
     </LinearGradient>
@@ -41,24 +47,33 @@ const styles = StyleSheet.create({
         flex:1,
     },
     textt:{
-        fontSize: 25,
+        fontSize: 30,
         color:"white",
         alignSelf:"center",
-        fontWeight:"300",
-        textAlign:"right",
+        fontWeight:"400",
+        textAlign:"left",
     },
     textconatiner:{
-        top:"140%",
-        marginHorizontal: 180,
+        top:"55%",
+        marginHorizontal: 8,
         //backgroundColor: "red",
         //textAlign:"right",
-        width:"40%",
+        width:"60%",
         height:"40%",
-        paddingRight:"4%",
+        paddingLeft:"7%",
     },
    
     topImage:{
         alignSelf:"center",
         top:"1900%",
+    },
+    ImageContainer2:{
+        
+    },
+    topImage2:{
+        height:300,
+        width:300,
+        marginHorizontal:"10%",
+        bottom:"10%",
     },
 })
