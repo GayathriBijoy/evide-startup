@@ -1,0 +1,79 @@
+import { StyleSheet, Text, View,Image,TouchableOpacity} from 'react-native'
+import React from 'react'
+import { LinearGradient } from 'expo-linear-gradient';
+import { useNavigation } from '@react-navigation/native';
+
+const InstOne = () => {
+
+    const navigation= useNavigation();
+
+    const handleRegister=() =>{
+        navigation.navigate("Login")
+    }
+
+
+  return (
+   <View style={styles.container}>
+    <LinearGradient colors={['#298E6F', '#1C6A52', '#165843','#104534']} style={styles.container}>
+   
+        <View style={styles.textconatiner}>
+            <Text style={styles.textt}>Plan  Your  Trip  Now</Text>
+        </View>
+   
+        <TouchableOpacity onPress= {handleRegister}>
+        <View style={styles.button}>
+            <Text style={styles.buttext}>Get started!</Text>
+        </View>
+        </TouchableOpacity>
+        
+        
+    </LinearGradient>
+   </View>
+   
+  )
+}
+
+export default InstOne
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+    },
+    textt:{
+        fontSize: 90,
+        color:"white",
+        alignSelf:"center",
+        fontWeight:"400",
+        textAlign:"left",
+    },
+    textconatiner:{
+        top:"20%",
+        marginHorizontal: 30,
+        //backgroundColor: "red",
+        //textAlign:"right",
+        width:"60%",
+        height:"50%",
+        paddingLeft:"4%",
+        fontFamily:"inter",
+    },
+   
+    topImage:{
+        alignSelf:"center",
+        top:"1500%",
+    },
+    buttext:{
+        color:"green",
+        fontSize: 15,
+        textAlign:'center',
+        //fontWeight:"80",
+      },
+      button:{
+        alignSelf:"center",
+        borderRadius:20,
+        paddingVertical:12,
+        paddingHorizontal:2,
+        backgroundColor:'white',
+        width:300,
+        top:"600%",
+      },
+})
